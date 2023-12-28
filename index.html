@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__logo">
+
+      <nav class="navbar__menu">
+        <ul class="navbar__list">
+          <li class="navbar__logo">
+            <a href="https://commemyhome.fr">
+              <img
+                src="https://commemyhome.fr/wp-content/uploads/2023/05/IMG_1979-removebg-preview.png"
+              />
+            </a>
+          </li>
+          <li><a href="#">Nos services</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Conseils et actualités</a></li>
+          <li><a href="#">Devenir City Manager</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <form action="traitement.php" method="post">
+        <div class="title">
+          <h2>Contactez-nous</h2>
+        </div>
+        <div class="form-group">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group submit">
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
